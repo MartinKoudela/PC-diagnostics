@@ -1,16 +1,32 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your PC Diagnostcs</title>
+    <title>Your PC Specifications</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<button id="startButton">Začněme</button>
-<h1 id="memory"></h1>
+<ul>
+    <li id="memory"></li>
+    <li id="cpu"></li>
+    <li id="gpu"></li>
+    <li id="battery"></li>
+    <li id="connection"></li>
+    <li id="user"></li>
+    <li id="platform"></li>
+
+</ul>
+<script>
+    // Add animation delay to each list item
+    document.querySelectorAll('li').forEach((li, index) => {
+        li.style.setProperty('--index', index);
+    });
+
+</script>
+
 <script src="script.js"></script>
 </body>
 </html>

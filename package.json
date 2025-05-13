@@ -1,11 +1,25 @@
 {
-  "name": "Diagnostics",
+  "name": "diagnostics",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "http-server . -o start.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinKoudela/PC-diagnostics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinKoudela/PC-diagnostics/issues"
+  },
+  "homepage": "https://github.com/MartinKoudela/PC-diagnostics#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
